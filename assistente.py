@@ -144,6 +144,11 @@ class Assistente:
                     print("Não encontrei uma orientação para essa dúvida.")
                     print("Tente usar outras palavras ou escolha uma categoria no menu.")
                     print("Categorias disponíveis: " + ", ".join(self.base.categorias()))
+                    tempo = round(time.time() - inicio, 1)
+                    self.registrar("pergunta", texto, None, False, False, 1, tempo)
+                    inicio = time.time()
+                    tentativas = 0
+                    ultima_pergunta = ""
                 else:
                     tempo = round(time.time() - inicio, 1)
                     self.mostrar_resultado(resultados)
