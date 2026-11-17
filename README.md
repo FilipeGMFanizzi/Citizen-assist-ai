@@ -7,8 +7,8 @@ Assistente de terminal em Python que orienta **jovens no primeiro emprego** sobr
 | Nome | RM |
 |------|----|
 | Filipe Gunther | 571331 |
-| Lucas Pinheiro | PREENCHER |
-| Guilherme Guimarães | PREENCHER |
+| Lucas Pinheiro | 573497 |
+| Guilherme Guimarães | 572957 |
 
 ## Público e problema
 
