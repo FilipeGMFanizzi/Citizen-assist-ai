@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "categoria": "Documentos",
+    "titulo": "Tirar o CPF pela primeira vez",
+    "palavras_chave": ["cpf", "tirar cpf", "primeiro cpf", "inscricao no cpf", "cadastro de pessoa fisica"],
+    "resposta": "A inscrição no CPF é gratuita pelo site da Receita Federal (pelo gov.br). Você preenche o formulário com os mesmos dados do seu documento. Se o sistema gerar um protocolo, leve o protocolo e os documentos à Receita Federal. Em cartórios, Correios, Banco do Brasil e Caixa pode ser cobrada uma taxa.",
+    "documentos": ["Documento de identificação oficial com foto (por exemplo RG ou CIN)", "Protocolo do formulário, se o sistema gerar um"],
+    "onde": "Site da Receita Federal (gov.br), cartório de registro civil, Correios, Banco do Brasil ou Caixa",
+    "fonte": "https://www.gov.br/pt-br/servicos/inscrever-no-cpf",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 2,
+    "categoria": "Documentos",
+    "titulo": "Fazer a Carteira de Identidade Nacional (CIN)",
+    "palavras_chave": ["cin", "carteira de identidade", "identidade", "rg", "novo rg", "carteira de identidade nacional"],
+    "resposta": "A CIN é o novo documento de identidade e usa o número do CPF. A primeira emissão em papel é gratuita. Você agenda o atendimento no órgão de identificação do seu estado (em São Paulo, no Poupatempo). Os documentos pedidos podem mudar de estado para estado. O RG antigo continua valendo até 2032.",
+    "documentos": ["Certidão de nascimento ou de casamento", "CPF", "Comprovante de residência atualizado"],
+    "onde": "Órgão de identificação do seu estado, com agendamento pela internet (em São Paulo, o Poupatempo)",
+    "fonte": "https://www.gov.br/pt-br/servicos",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 3,
+    "categoria": "Documentos",
+    "titulo": "Tirar o título de eleitor pela primeira vez",
+    "palavras_chave": ["titulo de eleitor", "titulo eleitoral", "primeiro titulo", "alistamento eleitoral", "tirar titulo", "titulo net", "fazer titulo"],
+    "resposta": "O pedido pode ser feito pelo sistema Título Net, no site do TSE, ou no Cartório Eleitoral. Quem tira o título pela primeira vez precisa ir ao cartório eleitoral para a coleta da biometria, que é gratuita. O voto é facultativo para quem tem 16 e 17 anos e obrigatório a partir dos 18.",
+    "documentos": ["Documento oficial de identificação com foto", "Comprovante de residência", "Quitação do serviço militar, para homens, quando for exigido"],
+    "onde": "Site do TSE (Título Net) ou Cartório Eleitoral da sua cidade",
+    "fonte": "https://www.tse.jus.br/imprensa/noticias-tse/2021/Maio/confira-como-tirar-o-primeiro-titulo-eleitoral-pela-internet",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 4,
+    "categoria": "Documentos",
+    "titulo": "Tirar a segunda via do título de eleitor",
+    "palavras_chave": ["segunda via titulo", "2 via titulo", "perdi o titulo", "perdi meu titulo", "perdi o titulo de eleitor", "perdi meu titulo de eleitor", "e titulo", "imprimir titulo"],
+    "resposta": "Se você está em dia com a Justiça Eleitoral, a segunda via é gratuita. Dá para ver e imprimir o título pelo aplicativo e-Título ou pelo serviço de autoatendimento no site do TSE, sem ir ao cartório na maioria dos casos.",
+    "documentos": ["Dados pessoais para confirmar sua identidade no aplicativo ou no site"],
+    "onde": "Aplicativo e-Título (Android e iOS), site do TSE ou Cartório Eleitoral",
+    "fonte": "https://www.tse.jus.br/comunicacao/noticias/2025/Fevereiro/nao-sei-onde-esta-o-meu-titulo-eleitoral-como-faco-para-recupera-lo",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 5,
+    "categoria": "Documentos",
+    "titulo": "Fazer o alistamento militar",
+    "palavras_chave": ["alistamento militar", "alistamento", "reservista", "servico militar", "exercito", "junta militar", "certificado de alistamento"],
+    "resposta": "O alistamento é obrigatório para homens no ano em que completam 18 anos e vai de janeiro até o fim de junho. Para mulheres é voluntário. É gratuito dentro do prazo e pode ser feito no site Alistamento Online, com conta gov.br, ou na Junta de Serviço Militar. Depois do prazo há multa e podem existir restrições, como para passaporte e matrícula em faculdade.",
+    "documentos": ["Certidão de nascimento ou de casamento", "Documento de identidade (RG ou CIN)", "CPF, se tiver", "Comprovante de residência recente"],
+    "onde": "Site Alistamento Online (alistamento.eb.mil.br) ou Junta de Serviço Militar da sua cidade",
+    "fonte": "https://alistamento.eb.mil.br/",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 6,
+    "categoria": "Documentos",
+    "titulo": "Criar a conta gov.br",
+    "palavras_chave": ["gov br", "conta gov br", "criar conta gov br", "nivel prata", "nivel ouro", "nivel bronze"],
+    "resposta": "A conta gov.br é gratuita e é o login usado em serviços como a Carteira de Trabalho Digital, o Alistamento Online e o Portal Emprega Brasil. Você cria a conta no site ou no aplicativo gov.br, informando o seu CPF. Ela tem três níveis: bronze, prata e ouro. Alguns serviços pedem nível prata ou ouro.",
+    "documentos": ["CPF"],
+    "onde": "Site gov.br ou aplicativo gov.br (Android e iOS)",
+    "fonte": "https://www.gov.br",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 7,
+    "categoria": "Trabalho",
+    "titulo": "Obter a Carteira de Trabalho Digital",
+    "palavras_chave": ["carteira de trabalho", "ctps", "carteira digital", "carteira de trabalho digital", "tirar carteira de trabalho", "carteira azul"],
+    "resposta": "A Carteira de Trabalho agora é digital e já fica ligada ao seu CPF. Baixe o aplicativo Carteira de Trabalho Digital ou entre no site gov.br com a sua conta gov.br. Não é preciso tirar a carteira de papel. O serviço é gratuito.",
+    "documentos": ["CPF", "Conta gov.br"],
+    "onde": "Aplicativo Carteira de Trabalho Digital (Android e iOS) ou site gov.br",
+    "fonte": "https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 8,
+    "categoria": "Trabalho",
+    "titulo": "Perdi a carteira de trabalho de papel",
+    "palavras_chave": ["perdi carteira de trabalho", "perdi minha carteira de trabalho", "extravio carteira de trabalho", "segunda via carteira de trabalho", "carteira de trabalho perdida", "carteira de trabalho de papel"],
+    "resposta": "Não precisa pedir segunda via da carteira de papel. A versão digital substitui a de papel. Basta habilitar a Carteira de Trabalho Digital pelo aplicativo ou pelo site com a sua conta gov.br. A carteira de papel só é usada em casos especiais, como uma determinação da Justiça.",
+    "documentos": ["CPF", "Conta gov.br"],
+    "onde": "Aplicativo Carteira de Trabalho Digital (Android e iOS) ou site gov.br",
+    "fonte": "https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 9,
+    "categoria": "Trabalho",
+    "titulo": "Procurar vagas de emprego no Sine",
+    "palavras_chave": ["sine", "vagas de emprego", "procurar emprego", "emprega brasil", "buscar emprego", "achar emprego", "arrumar emprego", "primeiro emprego"],
+    "resposta": "O Sine reúne as vagas de emprego do governo. Você pode ver as vagas no Portal Emprega Brasil (com login gov.br), no aplicativo da Carteira de Trabalho Digital ou em um posto do Sine. Mantenha seu cadastro e suas pretensões profissionais atualizados. Alguns serviços do portal podem pedir conta gov.br nível prata ou ouro.",
+    "documentos": ["Conta gov.br", "CPF"],
+    "onde": "Portal Emprega Brasil, aplicativo da Carteira de Trabalho Digital ou posto do Sine da sua cidade",
+    "fonte": "https://www.gov.br/pt-br/servicos/buscar-emprego-no-sistema-nacional-de-emprego-sine",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 10,
+    "categoria": "Trabalho",
+    "titulo": "Entrar como Jovem Aprendiz",
+    "palavras_chave": ["jovem aprendiz", "menor aprendiz", "ser aprendiz", "ser jovem aprendiz", "contrato de aprendizagem", "aprendizagem profissional", "primeiro emprego"],
+    "resposta": "O Jovem Aprendiz é um contrato de trabalho especial para jovens de 14 a 24 anos (sem limite de idade para pessoas com deficiência). Tem carteira assinada e junta trabalho com um curso de aprendizagem. Em regra o contrato dura no máximo dois anos. Quem ainda não terminou o ensino médio precisa estar matriculado e frequentando a escola.",
+    "documentos": ["Documento de identificação com foto", "CPF", "Comprovante de matrícula e frequência escolar, se ainda não concluiu o ensino médio"],
+    "onde": "Empresas que contratam aprendizes e entidades de formação; procure também o Sine da sua cidade",
+    "fonte": "https://www.gov.br/trabalho-e-emprego/pt-br",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 11,
+    "categoria": "Trabalho",
+    "titulo": "Direitos do Jovem Aprendiz",
+    "palavras_chave": ["direitos do aprendiz", "direitos do jovem aprendiz", "direito do aprendiz", "ferias do aprendiz", "13 do aprendiz", "aprendiz tem direito"],
+    "resposta": "O aprendiz tem direitos como salário mínimo-hora, férias, 13º salário, FGTS, vale-transporte, proteção da Previdência e anotação na carteira de trabalho. Menores de 18 anos não podem trabalhar em atividades perigosas ou insalubres nem no período noturno, das 22h às 5h.",
+    "documentos": ["Contrato de aprendizagem registrado na carteira de trabalho"],
+    "onde": "Na empresa que contratou, na entidade de formação ou no Ministério do Trabalho e Emprego",
+    "fonte": "https://www.gov.br/trabalho-e-emprego/pt-br",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 12,
+    "categoria": "FGTS e Segurança",
+    "titulo": "O que é o FGTS",
+    "palavras_chave": ["o que e fgts", "o que e o fgts", "fundo de garantia", "fgts", "deposito do fgts"],
+    "resposta": "O FGTS é um fundo formado por depósitos mensais que o empregador faz em uma conta em nome do trabalhador, na Caixa. O depósito é de 8% do salário bruto e, para o jovem aprendiz, de 2%. O dinheiro pode ser usado em situações previstas em lei, como demissão sem justa causa.",
+    "documentos": ["Nenhum, o depósito é feito pela empresa"],
+    "onde": "Caixa Econômica Federal (aplicativo FGTS, site ou agências)",
+    "fonte": "https://www.caixa.gov.br/beneficios-trabalhador/fgts/",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 13,
+    "categoria": "FGTS e Segurança",
+    "titulo": "Consultar o saldo do FGTS",
+    "palavras_chave": ["saldo do fgts", "consultar fgts", "consultar meu fgts", "extrato do fgts", "ver fgts", "ver meu fgts", "meu fgts", "app fgts", "fgts"],
+    "resposta": "Você pode ver o saldo e o extrato pelo aplicativo FGTS, da Caixa, ou pelo site da Caixa. No extrato dá para conferir se a empresa fez o depósito de cada mês trabalhado. Use sempre os canais oficiais da Caixa e nunca passe sua senha para ninguém.",
+    "documentos": ["CPF", "Senha cadastrada no aplicativo FGTS"],
+    "onde": "Aplicativo FGTS (Android e iOS), site da Caixa ou agência da Caixa",
+    "fonte": "https://www.caixa.gov.br/extrato-fgts",
+    "verificado_em": "2026-11-14"
+  },
+  {
+    "id": 14,
+    "categoria": "FGTS e Segurança",
+    "titulo": "Cuidado com golpes e sites falsos",
+    "palavras_chave": ["golpe", "site falso", "cobrar", "cobrando", "pagar para tirar", "fraude", "e golpe"],
+    "resposta": "A Carteira de Trabalho Digital é gratuita, pelo aplicativo oficial ou pelo site gov.br. O CPF também é gratuito pelo site da Receita Federal e a primeira via da CIN em papel é gratuita. Desconfie de sites, mensagens ou pessoas que cobram para liberar esses documentos. Para consultar o FGTS use só o aplicativo e o site da Caixa e nunca informe a sua senha.",
+    "documentos": ["Nenhum"],
+    "onde": "Sites e aplicativos oficiais: gov.br, Receita Federal, TSE e Caixa",
+    "fonte": "https://www.gov.br",
+    "verificado_em": "2026-11-14"
+  }
+]
