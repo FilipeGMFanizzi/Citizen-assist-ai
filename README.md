@@ -7,8 +7,8 @@ Assistente de terminal em Python que orienta **jovens no primeiro emprego** sobr
 | Nome | RM |
 |------|----|
 | Filipe Gunther | 571331 |
-| Lucas Pinheiro | 573497 |
-| Guilherme Guimarães | 572957 |
+| Lucas Pinheiro | PREENCHER |
+| Guilherme Guimarães | PREENCHER |
 
 ## Público e problema
 
@@ -109,11 +109,12 @@ Todas as 14 orientações foram conferidas pela equipe em 14/11/2026 (campo `ver
 
 ## Resultado do teste com usuários
 
-> PREENCHER depois do teste: no mínimo 3 pessoas de fora da equipe e 10 atendimentos ou mais. Não registrar nomes nem dados pessoais.
+**O teste com pessoas de fora da equipe não foi realizado.** O enunciado pede 3 pessoas e 10 atendimentos, mas a equipe não conseguiu aplicar o teste no prazo. Para demonstrar o funcionamento do histórico, dos indicadores e do CSV, os arquivos em `data/` contêm atendimentos feitos **pelos próprios integrantes**. Esses números não representam o uso por pessoas reais.
+
+Indicadores do uso da equipe (opção 3 do menu):
 
 | Indicador | Resultado |
 |-----------|-----------|
-| Pessoas testadas | _ |
 | Total de atendimentos | _ |
 | Resposta encontrada (%) | _ |
 | Taxa de acerto (%) | _ |
@@ -123,11 +124,12 @@ Todas as 14 orientações foram conferidas pela equipe em 14/11/2026 (campo `ver
 
 **Dúvidas sem solução:** _ (copiar da opção 3 do menu)
 
-**Melhoria feita a partir do teste:** _ (ex.: palavra-chave "emprego" adicionada à orientação 9 porque "preciso de emprego" não era encontrada)
+**Melhoria feita a partir dos testes da equipe:** _ (ex.: a pergunta "preciso de emprego" não era encontrada, então a palavra-chave "emprego" foi adicionada à orientação 9)
 
 ## Limitações
 
 * A busca é por regras: só entende palavras-chave que estão no JSON, não interpreta sentido nem erros de digitação.
+* Não foi testado com usuários reais (ver seção acima), então a cobertura de palavras-chave pode deixar de fora formas de perguntar que a equipe não previu.
 * Responde apenas os 14 temas da base; dúvidas fora dela ficam sem resposta.
 * Os requisitos e os prazos dos serviços públicos podem mudar; por isso cada resposta mostra a data de verificação.
 * Não é um canal oficial e não substitui o atendimento dos órgãos públicos.
