@@ -1,103 +1,137 @@
-# Mission Control AI
+# Citizen Assist AI
 
-Sistema de monitoramento de missão espacial desenvolvido em Python para a Global Solution 2026.1 da FIAP.
+Assistente de terminal em Python que orienta **jovens no primeiro emprego** sobre documentos e direitos básicos, usando apenas informações verificadas, sempre com fonte, data de verificação e aviso de que não é um canal oficial. Projeto da Global Solution 2026.2 (FIAP), desafio CitizenTech.
 
-## O que o projeto faz
+## Integrantes
 
-O programa simula o monitoramento de uma missão espacial chamada **Nova Frontier Alpha**. Ele analisa 6 ciclos de monitoramento e verifica se a missão está estável, em atenção ou em situação crítica.
+| Nome | RM |
+|------|----|
+| Filipe Gunther | 571331 |
+| Lucas Pinheiro | PREENCHER |
+| Guilherme Guimarães | PREENCHER |
 
-Em cada ciclo são analisados:
+## Público e problema
 
-* Temperatura interna do módulo
-* Qualidade da comunicação com a base
-* Nível de bateria
-* Nível de oxigênio
-* Estabilidade operacional
+**Público:** jovens de 14 a 24 anos que estão buscando o primeiro emprego.
 
-No final o programa gera um relatório completo com médias, tendência da missão e a área que acumulou mais risco.
+**Problema:** as informações sobre carteira de trabalho digital, CPF, título de eleitor, alistamento militar e direitos do Jovem Aprendiz estão espalhadas em vários sites, em linguagem técnica e misturadas com páginas falsas que cobram por serviços gratuitos. O assistente reúne tudo em respostas curtas, em linguagem simples, com a fonte oficial.
 
-## Como rodar
+## ODS relacionados
 
-Só precisa ter o Python instalado. Não usa nenhuma biblioteca externa.
+* **ODS 8** – Trabalho decente e crescimento econômico (acesso ao primeiro emprego e aos direitos do trabalhador)
+* **ODS 10** – Redução das desigualdades (informação clara para quem tem menos acesso)
+* **ODS 16** – Paz, justiça e instituições eficazes (acesso a serviços públicos e combate a golpes)
+
+## Como executar
+
+Só é preciso ter o Python 3 instalado. Não usa bibliotecas externas.
 
 ```
-python mission\\\_control.py
+python main.py
 ```
 
-## Regras de alerta
-
-### Temperatura
-
-* Abaixo de 18°C: ATENCAO
-* Entre 18°C e 30°C: NORMAL
-* Entre 31°C e 35°C: ATENCAO
-* Acima de 35°C: CRITICO
-
-### Comunicação
-
-* Abaixo de 30%: CRITICO
-* Entre 30% e 59%: ATENCAO
-* 60% ou mais: NORMAL
-
-### Bateria
-
-* Abaixo de 20%: CRITICO
-* Entre 20% e 49%: ATENCAO
-* 50% ou mais: NORMAL
-
-### Oxigênio
-
-* Abaixo de 80%: CRITICO
-* Entre 80% e 89%: ATENCAO
-* 90% ou mais: NORMAL
-
-### Estabilidade
-
-* Abaixo de 40%: CRITICO
-* Entre 40% e 69%: ATENCAO
-* 70% ou mais: NORMAL
-
-## Pontuação de risco
-
-Cada classificação gera uma pontuação por ciclo:
-
-* NORMAL = 0 ponto
-* ATENCAO = 1 ponto
-* CRITICO = 2 pontos
-
-A pontuação máxima por ciclo é 10 (5 áreas x 2 pontos cada).
-
-Com base na pontuação total o ciclo é classificado assim:
-
-* 0 a 2 pontos: MISSAO ESTAVEL
-* 3 a 5 pontos: MISSAO EM ATENCAO
-* 6 a 10 pontos: MISSAO CRITICA
-
-## Funções do projeto
-
-* `analisar\\\_temperatura()` - classifica a temperatura do ciclo
-* `analisar\\\_comunicacao()` - classifica a comunicação do ciclo
-* `analisar\\\_bateria()` - classifica a bateria do ciclo
-* `analisar\\\_oxigenio()` - classifica o oxigênio do ciclo
-* `analisar\\\_estabilidade()` - classifica a estabilidade do ciclo
-* `classificar\\\_ciclo()` - define se o ciclo é estável, em atenção ou crítico
-* `analisar\\\_tendencia()` - compara o primeiro e o último ciclo para ver se a missão melhorou ou piorou
-* `identificar\\\_area\\\_mais\\\_afetada()` - soma os pontos de risco por área e retorna a mais afetada
-* `gerar\\\_recomendacao()` - gera uma recomendação com base nos alertas do ciclo
+Menu principal: 1) Fazer uma pergunta, 2) Navegar por categorias, 3) Ver indicadores, 4) Exportar atendimentos para CSV, 0) Sair (ao sair, pede a nota de facilidade de 1 a 5).
 
 ## Estrutura do repositório
 
 ```
-mission-control-ai/
+citizen-assist-ai/
 ├── README.md
-└── mission\\\_control.py
+├── main.py
+├── orientacao.py
+├── base_conhecimento.py
+├── assistente.py
+└── data/
+    ├── base_conhecimento.json
+    ├── historico.json
+    └── atendimentos.csv
 ```
 
-## Equipe
+## Classes (composição)
 
-Filipe Gunther RM: 571331
+```
+Assistente
+ └── base: BaseConhecimento
+      └── orientacoes: [Orientacao, Orientacao, ...]
+```
 
-Lucas Pinheiro RM: 
+* **Orientacao**: guarda os dados de um registro do JSON e exibe na tela (`exibir()`).
+* **BaseConhecimento**: lê o JSON (`carregar()`), lista categorias (`categorias()`, `por_categoria()`) e busca (`pontuar()`, `buscar()`).
+* **Assistente**: faz o atendimento (`perguntar()`, `navegar()`), guarda o histórico (`registrar()`), calcula os indicadores (`indicadores()`) e exporta o CSV (`exportar_csv()`).
 
-Guilherme Guimarães RM: 
+## Regra de pontuação
 
+Pergunta, palavras-chave e título são normalizados (minúsculas, sem acentos, sem pontuação) antes de comparar.
+
+| Regra | Resultado |
+|-------|-----------|
+| Palavra-chave da orientação aparece na pergunta | +3 pontos |
+| Palavra da pergunta (4 letras ou mais, fora da lista de palavras comuns) aparece no título | +1 ponto (cada palavra conta uma vez) |
+| Melhor orientação com 6 pontos ou mais | Confiança ALTA |
+| Melhor orientação com 3 a 5 pontos | Confiança MÉDIA |
+| Nenhuma orientação com 3 pontos ou mais | "Não encontrei": sugere outras palavras e as categorias |
+
+`buscar()` devolve uma lista de tuplas `(pontos, orientacao)` da maior para a menor pontuação. O assistente mostra a melhor e até duas alternativas com 3 pontos ou mais.
+
+**Ajuste da equipe:** além do que o PDF sugere, a lista `PALAVRAS_COMUNS` ignora palavras como "como", "para" e "quero" na pontuação pelo título, e o `normalizar()` também troca `-` e `/` por espaço (para casar "gov.br" com "gov br").
+
+Exemplo: em "Quero ser jovem aprendiz", a orientação 10 recebe +3 por `jovem aprendiz`, +3 por `ser jovem aprendiz`, +1 por "jovem" e +1 por "aprendiz" no título: **8 pontos, confiança ALTA**.
+
+## Regras de atendimento
+
+* Entradas inválidas (vazio, letras, número fora da faixa, s/n inválido) nunca encerram o programa.
+* Pergunta com 8 ou mais dígitos ou com `@` é recusada e **não é registrada**.
+* Toda resposta mostra fonte, data de verificação e o aviso "este assistente NÃO é um canal oficial".
+* JSON ausente ou corrompido não trava o programa (mensagem de erro ou histórico novo).
+
+## Histórico, indicadores e CSV
+
+Cada atendimento é salvo em `data/historico.json` (data, sessão, origem, pergunta, id da orientação, encontrou, ajudou, tentativas, tempo em segundos e nota). A opção 3 do menu mostra: resposta encontrada (%), taxa de acerto (%), tempo médio para encontrar, tentativas por atendimento, facilidade de uso (1 a 5) e a lista de dúvidas sem solução. A opção 4 exporta tudo para `data/atendimentos.csv` com `csv.DictWriter`.
+
+## Integrações com outras disciplinas
+
+Nenhuma. (Se a equipe integrar algo, descreva aqui.)
+
+## Fontes consultadas
+
+* https://www.gov.br/pt-br/servicos/inscrever-no-cpf
+* https://www.gov.br/pt-br/servicos
+* https://www.tse.jus.br (Título Net, e-Título)
+* https://alistamento.eb.mil.br/
+* https://www.gov.br
+* https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho
+* https://www.gov.br/pt-br/servicos/buscar-emprego-no-sistema-nacional-de-emprego-sine
+* https://www.gov.br/trabalho-e-emprego/pt-br
+* https://www.caixa.gov.br/beneficios-trabalhador/fgts/
+* https://www.caixa.gov.br/extrato-fgts
+
+Todas as 14 orientações foram conferidas pela equipe em 14/11/2026 (campo `verificado_em`).
+
+## Resultado do teste com usuários
+
+> PREENCHER depois do teste: no mínimo 3 pessoas de fora da equipe e 10 atendimentos ou mais. Não registrar nomes nem dados pessoais.
+
+| Indicador | Resultado |
+|-----------|-----------|
+| Pessoas testadas | _ |
+| Total de atendimentos | _ |
+| Resposta encontrada (%) | _ |
+| Taxa de acerto (%) | _ |
+| Tempo médio para encontrar (s) | _ |
+| Tentativas por atendimento | _ |
+| Facilidade de uso (1 a 5) | _ |
+
+**Dúvidas sem solução:** _ (copiar da opção 3 do menu)
+
+**Melhoria feita a partir do teste:** _ (ex.: palavra-chave "emprego" adicionada à orientação 9 porque "preciso de emprego" não era encontrada)
+
+## Limitações
+
+* A busca é por regras: só entende palavras-chave que estão no JSON, não interpreta sentido nem erros de digitação.
+* Responde apenas os 14 temas da base; dúvidas fora dela ficam sem resposta.
+* Os requisitos e os prazos dos serviços públicos podem mudar; por isso cada resposta mostra a data de verificação.
+* Não é um canal oficial e não substitui o atendimento dos órgãos públicos.
+
+## Vídeo técnico
+
+Link (YouTube, não listado): PREENCHER
