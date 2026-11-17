@@ -7,8 +7,8 @@ Assistente de terminal em Python que orienta **jovens no primeiro emprego** sobr
 | Nome | RM |
 |------|----|
 | Filipe Gunther | 571331 |
-| Lucas Pinheiro | PREENCHER |
-| Guilherme Guimarães | PREENCHER |
+| Lucas Pinheiro | 573497 |
+| Guilherme Guimarães | 572957 |
 
 ## Público e problema
 
@@ -115,16 +115,20 @@ Indicadores do uso da equipe (opção 3 do menu):
 
 | Indicador | Resultado |
 |-----------|-----------|
-| Total de atendimentos | _ |
-| Resposta encontrada (%) | _ |
-| Taxa de acerto (%) | _ |
-| Tempo médio para encontrar (s) | _ |
-| Tentativas por atendimento | _ |
-| Facilidade de uso (1 a 5) | _ |
+| Total de atendimentos | 10 |
+| Resposta encontrada (%) | 80,0% |
+| Taxa de acerto (%) | 70,0% |
+| Tempo médio para encontrar (s) | 6,6 |
+| Tentativas por atendimento | 1,0 |
+| Facilidade de uso (1 a 5) | 5,0 (uma sessão, nota dada por um integrante) |
 
-**Dúvidas sem solução:** _ (copiar da opção 3 do menu)
+**Dúvidas sem solução:**
 
-**Melhoria feita a partir dos testes da equipe:** _ (ex.: a pergunta "preciso de emprego" não era encontrada, então a palavra-chave "emprego" foi adicionada à orientação 9)
+* "Como consultar meu FGTS?" (a orientação 13 foi encontrada, mas o integrante marcou que não respondeu a dúvida)
+* "preciso de emprego"
+* "quanto ganha um aprendiz"
+
+**Melhoria feita a partir dos testes da equipe:** a pergunta "preciso de emprego" não era encontrada (só 1 ponto). A palavra-chave `emprego` foi adicionada à orientação 9 (vagas de emprego no Sine), e a pergunta passou a ser encontrada.
 
 ## Limitações
 
